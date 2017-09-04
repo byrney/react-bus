@@ -10,7 +10,7 @@ class Text extends React.Component{
     }
 
     render(){
-        return (<div>Hello</div>);
+        return (<div>It is:</div>);
     }
 
 }
@@ -32,18 +32,19 @@ class Clock extends React.Component {
         this.state = {date: new Date()};
     }
 
-    tick(){
+    tick(ts){
         this.setState(
             {date: new Date()}
         );
+        this.timerId = window.requestAnimationFrame( () => this.tick() );
     }
 
     componentDidMount(){
-        this.timerId = setInterval( () => this.tick(), 500 );
+        this.timerId = window.requestAnimationFrame( () => this.tick() );
     }
 
     componentWillUnmount(){
-        clearInterval(this.timerId);
+        window.cancelAnimationFrame(this.timerId);
     }
 
     render(){
