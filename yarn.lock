@@ -18,6 +18,55 @@
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@mapbox/whoots-js/-/whoots-js-3.0.0.tgz#c1de4293081424da3ac30c23afa850af1019bb54"
 
+"@turf/along@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@turf/along/-/along-4.6.0.tgz#f2196dcbf94ad7845d2e222cbef66ad65eaa0c91"
+  dependencies:
+    "@turf/bearing" "^4.6.0"
+    "@turf/destination" "^4.6.0"
+    "@turf/distance" "^4.6.0"
+    "@turf/helpers" "^4.6.0"
+
+"@turf/bearing@^4.6.0":
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/@turf/bearing/-/bearing-4.7.1.tgz#2b442f76a77e9813fb24f18ea29484018e8fa30d"
+  dependencies:
+    "@turf/invariant" "4.7.1"
+
+"@turf/destination@^4.6.0":
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/@turf/destination/-/destination-4.7.1.tgz#34691d76e185c7cf1bad94ea843a52a76f2c938f"
+  dependencies:
+    "@turf/helpers" "4.7.1"
+    "@turf/invariant" "4.7.1"
+
+"@turf/distance@^4.6.0":
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/@turf/distance/-/distance-4.7.1.tgz#d8bd48275f7418a98eae2adc0ff3f63548e05bcd"
+  dependencies:
+    "@turf/helpers" "4.7.1"
+    "@turf/invariant" "4.7.1"
+
+"@turf/helpers@4.7.1", "@turf/helpers@^4.6.0":
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/@turf/helpers/-/helpers-4.7.1.tgz#12cecbfe22b16386338537dae3e3da83de2f3fac"
+
+"@turf/invariant@4.7.1":
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/@turf/invariant/-/invariant-4.7.1.tgz#b95bc41a3cc7f1319d9a4c51ad5b3582905f81e4"
+
+"@turf/line-distance@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@turf/line-distance/-/line-distance-4.6.0.tgz#ad29c68c21de8811941614edd1f6b6a164ff1b1e"
+  dependencies:
+    "@turf/distance" "^4.6.0"
+    "@turf/helpers" "^4.6.0"
+    "@turf/meta" "^4.6.0"
+
+"@turf/meta@^4.6.0":
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/@turf/meta/-/meta-4.7.1.tgz#53a55281ae08a5fa2f414d9ba50a951d38e86ab5"
+
 abbrev@1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.0.tgz#d0554c2256636e2f56e7c2e5ad183f859428d81f"
