@@ -38,8 +38,12 @@ class Map extends React.Component {
 
     render(){
         return (
-            <ReactMap width={400} height={400} latitude={37.7577} longitude={-122.4376} zoom={8}
+            <ReactMap width={800} height={600}
                 mapboxApiAccessToken={accessToken}
+                mapStyle={'mapbox://styles/rbyrne/cit3c6w6j005v2xqrfv80tjp5'}
+                longitude={-3.5275513517662205}
+                latitude={50.72603021548042}
+                zoom={15} pitch={60}
                 onViewportChange={(viewport) => {
                     const {width, height, latitude, longitude, zoom} = viewport;
                     // Optionally call `setState` and use the state to update the map.
@@ -73,7 +77,7 @@ class Clock extends React.Component {
     }
 
     render(){
-        return (<div><ClockDisplay date={this.state.date} /> <Map /></div>);
+        return (<ClockDisplay date={this.state.date} /> );
     }
 }
 
@@ -84,7 +88,14 @@ class App extends React.Component{
     }
 
     render(){
-        return (<div id='app'><Text /><Clock/></div>);
+        return (<div id='app'>
+                    <Text />
+                    <div>
+                        <Clock/>
+                        <Map />
+                    </div>
+                </div>
+        );
     }
 
 
