@@ -1,4 +1,3 @@
-require('./node_modules/leaflet/dist/leaflet.css');
 require('./main.html');
 require('./styles.css');
 const accessToken = 'pk.eyJ1IjoicmJ5cm5lIiwiYSI6ImNpc3dhYTR6cDAwMmIydG1uOGNiYzYxYXcifQ.N0aptrqEwFyMpA_-I09tYQ';
